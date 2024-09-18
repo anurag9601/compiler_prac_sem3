@@ -1,5 +1,8 @@
-def enteryList():
+#There is one problem in this code 
+#It is not able to format this type of string t1=-8+9
+#So updated code is in update.py file
 
+def enteryList():
     #Taking number of entries 
     numberOfInputs = int(input("Number of entries: "))
     entry = 0
