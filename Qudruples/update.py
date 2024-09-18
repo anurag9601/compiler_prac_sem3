@@ -34,8 +34,14 @@ def Quadruples():
                             right_turn = True
                     if(right_turn == False):
                         temp_str += splitList[1][j]
-            temp_lst.append(temp_str)
-            result.append(temp_lst)
+            if(right_turn == False):
+                temp_lst.append(" ")
+                temp_lst.append("=")
+                temp_lst.append(temp_str)
+                result.append(temp_lst)
+            else:
+                temp_lst.append(temp_str)
+                result.append(temp_lst)
         else:
             is_operator = False
             for i in operators:
